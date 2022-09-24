@@ -19,11 +19,8 @@ const cards = data => {
 };
 
 const htmlTemplate = (data) => {
-    //destructure page dataa by type of employee... 
     console.log(data);
     
-   
-
     return `
     <!DOCTYPE html>
 <html lang="en">
