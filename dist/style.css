@@ -1,4 +1,4 @@
-header {
+.jumbotron-fluid {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
     color: aliceblue;
@@ -8,10 +8,3 @@ header {
     background: rgb(92, 159, 186);
 }
 
-.flex-wrap {
-    display: flex;
-    flex: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
