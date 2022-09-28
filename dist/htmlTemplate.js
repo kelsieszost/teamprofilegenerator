@@ -20,31 +20,37 @@ const cards = data => {
 const htmlTemplate = (data) => {
     console.log(data);
     
-    return `
-    <!DOCTYPE html>
+    return`
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Team Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="./dist/style.css">
 </head>
 <body>
+    
     <header>
-        <h1>My Team</h1>
+        <div class="jumbotron bg-primary text-white jumbotron-fluid">
+            <div class="container text-center">
+                <h1 class="display-5">My Team</h1>
+            </div>
+        </div>  
     </header>
+
 <main>
-    <div class="flex-wrap">
-${cards(data)}
-</div>
-</main> 
-</body>
-</html>
-    `;
+    <div class="row justify-content-center">
+    ${cards(data)}
+    </div>
+    </main>
+    </body>
+    </html>`;
+
 };
 
 const managerCard = (data) => {

@@ -52,7 +52,7 @@ const managerInfo = function () {
         },
         {
             type: 'text',
-            name: 'office',
+            name: 'officeNumber',
             message: 'Enter office number',
             validate: office => {
                 if (office) {
