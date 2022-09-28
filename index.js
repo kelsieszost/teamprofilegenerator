@@ -158,10 +158,10 @@ const menu = function () {
 
     ])
     .then(employeesData => {
-        let { name , id, email, role, github, school, confirmAddEmployee} = employeesData;
+        let { name , id, email, role, github, school, addEmployee} = employeesData;
         let employee;
 
-        if(role === 'Engineer') {
+        if (role === 'Engineer') {
             employee = new Engineer(name, id, email, github);
             console.log(employee);
         } else if (role === "Intern") {
@@ -170,12 +170,10 @@ const menu = function () {
         }
         employees.push(employee);
 
-        if(confirmAddEmployee) {
+        if (addEmployee) {
             return menu(employees)
         } else {
-            // console.log(employees);
-            return employees;
-            
+            return employees;           
         }
     })
     
