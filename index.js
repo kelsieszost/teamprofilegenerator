@@ -54,8 +54,8 @@ const managerInfo = function () {
             type: 'text',
             name: 'officeNumber',
             message: 'Enter office number',
-            validate: office => {
-                if (office) {
+            validate: officeNumber => {
+                if (officeNumber) {
                     return true;
                 } else {
                     console.log('Please enter a office number');
